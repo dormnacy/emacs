@@ -1,11 +1,9 @@
 ;; cl - Common Lisp Extension
 (add-to-list 'package-archives
-	     '("popkit" . "http://elpa.popkit.org/packages/"))
-(add-to-list 'package-archives
-                          '("melpa-stable" . "https://stable.melpa.org/packages/") t)
-(when (< emacs-major-version 24)
+                          '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+;;(when (< emacs-major-version 24)
   ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
+ ;; (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (require 'cl)
 (require 'package) ;; You might already have this line(require 'org )Q
 (require 'org-install)
@@ -18,5 +16,6 @@
 (require 'org-pomodoro)
 (require 'linum)
 (require 'cnfonts)
+(require 'php-mode)
 ;;文件末尾
 (provide 'init-packages)

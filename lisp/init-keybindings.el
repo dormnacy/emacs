@@ -7,5 +7,6 @@
 
 (global-set-key (kbd "C-c C-x C-i") 'org-pomodoro)
 (global-set-key (kbd "C-c C-x C-o") 'org-pomodoro)
+(global-set-key (kbd "C-x g") 'magit-status)
 ;;文件末尾
 (provide 'init-keybindings)

@@ -2,7 +2,7 @@
 (add-to-list 'load-path "~/.jiangtao04/emacs.d/lisp/")
 (require 'init-packages)
 (require 'init-keybindings)
-
+(require 'init-php)
 (setq-default truncate-lines nil)
 (setq org-latex-listings 'minted)
 ;;关闭文件备份
@@ -58,5 +58,8 @@
 ;;(set-default-font "DejaVu Sans Mono 10")
 ;;(set-fontset-font "fontset-default" 'unicode"WenQuanYi Bitmap Song 12") ;;for linux
 ;;(set-fontset-font "fontset-default" 'unicode "宋体 12") ;; for windows
-(add-hook 'php-mode-hook #'ede-php-autoload-mode)
+;;(add-hook 'php-mode-hook #'ede-php-autoload-mode)
 
+;;存放编辑器接口产生的配置信息
+(setq custom-file (expand-file-name "~/.jiangtao04/emacs.d/lisp/custom.el" user-emacs-directory))
+(load-file custom-file)
