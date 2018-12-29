@@ -13,3 +13,12 @@
 |------------+------------+----------------------|
 | M-{number} | 多窗口切换 | 需要window-numbering |
 |------------+------------+----------------------|
+
+* magit
+** 修改常用的一些配色
+
+   #+BEGIN_SRC 
+       M-x customize-group RET magit-faces RET
+       set-face-foreground magit-diff-added
+       set-face-background   
+   #+END_SRC
