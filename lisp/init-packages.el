@@ -1,11 +1,12 @@
 ;; cl - Common Lisp Extension
-(add-to-list 'package-archives
-                          '("melpa-stable" . "http://stable.melpa.org/packages/") t)
-;;(when (< emacs-major-version 24)
-  ;; For important compatibility libraries like cl-lib
- ;; (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (require 'cl)
-(require 'package) ;; You might already have this line(require 'org )Q
+(when (>= emacs-major-version 24)
+    (require 'package)
+    (package-initialize)
+    (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
+			 ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
+
+;;(require 'package) ;; You might already have this line(require 'org )Q
 (require 'org-install)
 (require 'org )
 (require 'ox-latex)
@@ -17,5 +18,6 @@
 (require 'linum)
 (require 'cnfonts)
 (require 'php-mode)
+(require 'cc-mode)
 ;;文件末尾
 (provide 'init-packages)

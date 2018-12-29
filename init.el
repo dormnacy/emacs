@@ -3,6 +3,7 @@
 (require 'init-packages)
 (require 'init-keybindings)
 (require 'init-php)
+;;(require 'init-magit)
 (setq-default truncate-lines nil)
 (setq org-latex-listings 'minted)
 ;;关闭文件备份
@@ -53,9 +54,11 @@
 ;; 美化显示符号（elisp），比如lambda会显示为λ
 (prettify-symbols-mode)
 (global-prettify-symbols-mode 1)
+;; 激活window-numbering
+(window-numbering-mode 1)
 ;;中英文表格对齐问题
 
-;;(set-default-font "DejaVu Sans Mono 10")
+;n;(set-default-font "DejaVu Sans Mono 10")
 ;;(set-fontset-font "fontset-default" 'unicode"WenQuanYi Bitmap Song 12") ;;for linux
 ;;(set-fontset-font "fontset-default" 'unicode "宋体 12") ;; for windows
 ;;(add-hook 'php-mode-hook #'ede-php-autoload-mode)
