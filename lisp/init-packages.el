@@ -19,5 +19,7 @@
 (require 'cnfonts)
 (require 'php-mode)
 (require 'cc-mode)
+(require 'yasnippet)
+(yas-global-mode 1)
 ;;文件末尾
 (provide 'init-packages)

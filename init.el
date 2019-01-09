@@ -3,6 +3,7 @@
 (require 'init-packages)
 (require 'init-keybindings)
 (require 'init-php)
+(require 'init-yas)
 ;;(require 'init-magit)
 (setq-default truncate-lines nil)
 (setq org-latex-listings 'minted)
