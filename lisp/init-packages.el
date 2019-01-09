@@ -5,7 +5,7 @@
     (package-initialize)
     (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
 			 ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
-
+(add-to-list 'package-archives '("org" . "https://orgmode.org/elpa/") t)
 ;;(require 'package) ;; You might already have this line(require 'org )Q
 (require 'org-install)
 (require 'org )
